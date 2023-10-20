@@ -16,4 +16,10 @@ router.get('/proba', cors({origin: 'http://localhost:3000'}), async (req, res) =
     }
 })
 
+router.get('/probaa', /* cors({origin: 'http://localhost:3000'}), */ (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
+    const obj = {broj: 3333}
+    res.cookie('kolacic', 'vrednostiiii').json(obj)
+})
+
 module.exports = router;

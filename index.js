@@ -77,7 +77,7 @@ app.use('/', twitter);
 app.use('/', profileImg);
 app.use(cookieParser());   
 
-////////// Add headerss
+/////////// Add headerss
 
 mongoose.connect(mongoAddress2, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to the news database'))
